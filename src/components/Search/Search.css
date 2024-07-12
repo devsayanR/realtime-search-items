@@ -1,0 +1,85 @@
+.container {
+    padding: 20px;
+}
+
+.search-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    width: 100vw;
+    font-size: 1.2rem;
+    padding: 5px;
+    margin-inline: 30px;
+}
+
+.search-btn {
+    height: 40px;
+    transform: translate(-40px, 4px);
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding-left: 2px;
+    border-left: 2px solid black;
+}
+
+.items-box {
+    width: 100%;
+    height: 100%;
+    padding-inline: 30px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.image-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.items-box h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.item-name{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 10px;
+    text-transform: capitalize;
+    margin-top: 5px;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background: #00000084;
+    visibility: hidden;
+}
+
+.image-div:hover .item-name{
+    visibility: visible;
+}
+
+
+@media screen and (max-width: 425px){
+    .items-box{
+        padding-inline: 10px;
+    }
+}
