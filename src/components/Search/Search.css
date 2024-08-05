@@ -34,11 +34,11 @@
     padding-inline: 30px;
     overflow: hidden;
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
 }
 
-.image-div{
+.image-div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,6 +49,7 @@
 .image {
     width: 100%;
     height: 400px;
+    aspect-ratio: 3/2;
     object-fit: cover;
 }
 
@@ -57,7 +58,7 @@
     text-transform: uppercase;
 }
 
-.item-name{
+.item-name {
     width: 100%;
     display: flex;
     align-items: center;
@@ -73,13 +74,13 @@
     visibility: hidden;
 }
 
-.image-div:hover .item-name{
+.image-div:hover .item-name {
     visibility: visible;
 }
 
 
-@media screen and (max-width: 425px){
-    .items-box{
+@media screen and (max-width: 425px) {
+    .items-box {
         padding-inline: 10px;
     }
 }
